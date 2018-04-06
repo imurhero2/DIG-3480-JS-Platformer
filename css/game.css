@@ -5,15 +5,24 @@
 .lava          { background: rgb(255, 100, 100); }
 .wall          { background: white;   }
 .floater       { background: rgb(193,193,193); }
+.booster    { background: rgb(0, 0, 100);   }
+.quicksand    { background: rgb(135, 105, 56);   }
+.goal    { background: rgb(0, 255, 0);   }
 
 .actor  { position: absolute;  }
-.player { background: rgb(64, 64, 64); }
-.coin { background: rgb(241, 229, 89); }
-.bullet { background: rgb(100, 200, 100); }
+.coin   { background: rgb(241, 229, 89); }
+.player { background-image: url("pixel_character.png"); }
 
 .game {
   overflow: hidden;
   max-width: 600px;
   max-height: 450px;
   position: relative;
+}
+
+.lost .player {
+  background: rgb(160, 64, 64);
+}
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
 }
